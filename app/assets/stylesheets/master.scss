@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+
+.navbar {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: image_url('tiny-squares.png');
+}
+
+.navbar-inverse .navbar-brand {
+  font-family: 'Luckiest Guy', cursive;
+  font-weight: 100;
+  color: black;
+}
