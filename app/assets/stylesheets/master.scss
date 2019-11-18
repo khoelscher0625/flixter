@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
 
 .navbar {
   font-family: 'Luckiest Guy', cursive;
@@ -48,3 +49,16 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .btn {
   border-radius: 0;
 }
+
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  background: image_url('light-grey-terrazzo.png');
+  font-family: 'Cookie', cursive;
+}
+
