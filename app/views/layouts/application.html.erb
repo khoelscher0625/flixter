@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
 
    <%= link_to 'Flixter', root_path, class: 'navbar-brand' %>  
     
@@ -31,6 +31,7 @@
       </li>
     </ul>
     <ul class="navbar-nav">
+
       <% if user_signed_in? %>
         <li class="nav-item">
           <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
