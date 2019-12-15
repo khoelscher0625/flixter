@@ -1,13 +1,15 @@
 <br />
 
+  <%= link_to 'Preview As a Student...', course_path(@course), class: 'btn btn-warning float-right' %>
+  <br class="clr" />
+
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= @course.title %></h1>
   <% if @course.image.present? %>
   <%= image_tag @course.image.url, class: 'img-fluid' %>
   <% end %>
   <br />
-  <%= link_to 'Preview As a Student...', course_path(@course), class: 'btn btn-warning float-right' %>
-  <br class="clr" />
+
 
   <div class="text-center">
     <%= link_to 'Add a new section...', new_instructor_course_section_path(@course), class: 'btn btn-primary btn-lg' %>
@@ -34,6 +36,15 @@
         <br />
         <%= link_to 'Administer', instructor_course_path(@course), class: 'btn btn-danger btn-large' %>
       <% end %>
+
+        <br />
+        <br />
+
+        <% if current_user && current_user.enrolled_in?(@course) %>
+          <h3 class="badge badge-info">You are enrolled!</h3>
+        <% else %>
+        <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
+        <% end %>
     </div>
 
     <div class="col-sm-8 col-12">
