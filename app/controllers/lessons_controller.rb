@@ -13,7 +13,7 @@ helper_method :current_lesson
   end
 
   def require_authorized_for_current_course
-    if current_lesson.section.user != current_user
+    if current_lesson.section.course != current_course
       redirect_to course_path, alert: 'You must be enrolled to view this content'
     end
   end
