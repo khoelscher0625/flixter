@@ -45,7 +45,7 @@
 <ul>
     <ul class="sections">
     <% @current_course.sections.rank(:row_order).each do |section| %>
-      <li data-update-url="<%= instructor_section_path(section) %>">
+      <li data-update-url="<%= instructor_section_path section %>">
         <%= section.title %>
         <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
         <ul class="lessons">

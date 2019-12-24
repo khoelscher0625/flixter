@@ -16,7 +16,7 @@
   </div>
 
   <ul>
-    <% @course.sections.each do |section| %>
+    <% @course.sections.rank(:row_order).each do |section| %>
       <li>
         <%= section.title %>
       </li>
