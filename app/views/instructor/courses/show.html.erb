@@ -1,5 +1,18 @@
 <script>
     $(function() {
+      $('.sections').sortable({
+        update: function( event, ui ) {
+          $.ajax({
+            type: 'PUT',
+            url: ui.item.data('update-url'),
+            dataType: 'json',
+            data: { section: {row_order_position: ui.item.index()}}
+          });
+        }
+      });
+    });
+
+    $(function() {
       $('.lessons').sortable({
          update: function( event, ui ) {
         $.ajax({
@@ -30,8 +43,9 @@
 </div>
 
 <ul>
-    <% @current_course.sections.each do |section| %>
-      <li>
+    <ul class="sections">
+    <% @current_course.sections.rank(:row_order).each do |section| %>
+      <li data-update-url="<%= instructor_section_path(section) %>">
         <%= section.title %>
         <%= link_to 'New Lesson', new_instructor_section_lesson_path(section), class: 'float-right btn btn-primary btn-sm' %>
         <ul class="lessons">
