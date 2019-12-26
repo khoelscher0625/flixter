@@ -8,18 +8,18 @@
     <h2 class="text-center">
       <%= link_to course.title, course_path(course) %>    
     </h2>
-    <% if course.image.present? %>
-  <%= image_tag course.image.url, class: 'img-fluid' %>
-  <% end %>
+      <% if course.image.present? %>
+        <%= image_tag course.image.url, class: 'img-fluid' %>
+      <% end %>
     <br />
-    <div class="row">
-      <div class="col-sm col-12">
-        <%= course.description %>
+      <div class="row">
+        <div class="col-sm col-12">
+          <%= course.description %>
+        </div>
+        <div class="col-sm-4 col-12 text-center">
+          <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
+        </div>
       </div>
-      <div class="col-sm-4 col-12 text-center">
-      <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
-      </div>
-    </div>
-  <br class="clr" />
+    <br class="clr" />
   <% end %>
 </div>
