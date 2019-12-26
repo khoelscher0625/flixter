@@ -86,3 +86,6 @@ gem 'stripe'
 gem 'ranked-model'
 
 gem 'jquery-ui-rails'
+
+gem 'font-awesome-rails', '~> 4.6', '>= 4.6.3.1'
+gem 'font-awesome-sass', '~> 5.12.0'

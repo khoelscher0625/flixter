@@ -31,6 +31,7 @@
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
+  font-family: 'Acme', sans-serif;
   margin: 0;
 }
 
@@ -94,6 +95,7 @@ body {
 }
 
 .section{
+  font-family: 'Acme', sans-serif;
   border: 1px solid;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   padding: 20px;
@@ -107,6 +109,48 @@ body {
 }
 
 .lesson a b {
+  font-family: 'Acme', sans-serif;
   font-weight: 100;
   font-size: 25px;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Acme', sans-serif;
+}
+
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  background: black;
+  margin: 20px;
+}
+
+ul .header {
+  font-size: 25px;
+  color: white;
+}
+
+ul .header .fa {
+  font-size: 20px;
+}
+
+.lessons li {
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: 'Acme', sans-serif;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.lessons li b {
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.lessons li p {
+  margin: 0;
 }
