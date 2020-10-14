@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Flixter is a online learning platform that allows users to enroll as a student and take courses for e-learning, or sign-in as a teacher and load lessons and videos for enrolled students to view. 
 
-Things you may want to cover:
+[Flixter home page](https://flixter-kathryn-hoelscher.herokuapp.com)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Built with:
+* Ruby on Rails
+* MySQL
