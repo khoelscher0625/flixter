@@ -9,3 +9,4 @@ Flixter is a online learning platform that allows users to enroll as a student a
 Built with:
 * Ruby on Rails
 * MySQL
+* Stripe
