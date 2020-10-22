@@ -10,3 +10,6 @@ Built with:
 * Ruby on Rails
 * MySQL
 * Stripe
+
+Contributors:
+* Built independently
