@@ -10,6 +10,10 @@ Built with:
 * Ruby on Rails
 * MySQL
 * Stripe
+* HTML
+* CSS
+* Javascript
+* Bootstrap
 
 Contributors:
 * Built independently
