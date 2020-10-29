@@ -7,6 +7,7 @@ Flixter is a online learning platform that allows users to enroll as a student a
 <img width="1401" alt="image" src="https://user-images.githubusercontent.com/56094085/96036647-60c6f900-0e2a-11eb-9f64-f31417001e97.png">
 
 Usage: 
+
 If using the application as a student, use the provided sign-in/sign-up buttom to create an account:
  * Choose class or classes that you would like to enroll in.
  * Pay for classes using Stripe authentication.
